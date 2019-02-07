@@ -1,0 +1,31 @@
+<h2>backoffice home</h2>
+<h3><a href="#/app?logout=1">Go to app</a></h3>
+<br>
+<div>
+  <tabset>
+    <tab heading="Basic title" id="tab1"><span class="cursor-pointer">Basic content</span></tab>
+    <tab heading="Basic Title 1">Basic content 1</tab>
+    <tab heading="Basic Title 2">Basic content 2</tab>
+  </tabset>
+</div>
+
+
+<br>
+<ag-grid-angular style="width: 500px; height: 500px;" class="ag-theme-balham" [gridOptions]="gridOptions"></ag-grid-angular>
+<br>
+
+<bs-modal #checkModal [backdrop]="'static'">
+  <bs-modal-header [showDismiss]="true">
+  </bs-modal-header>
+  <bs-modal-body>
+    Hello World!
+  </bs-modal-body>
+  <bs-modal-footer>
+    <button (click)="close()">Close</button>
+  </bs-modal-footer>
+</bs-modal>
+<br>
+<button class="btn-primary" (click)="change()">Change</button>
+<button class="btn-primary" (click)="open()">Open</button>
+<br>
+<router-outlet></router-outlet>
