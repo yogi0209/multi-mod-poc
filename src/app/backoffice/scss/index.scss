@@ -1,0 +1,11 @@
+@import 'variables';
+@import '~bootstrap/dist/css/bootstrap.css';
+//@import '~bootstrap/scss/bootstrap';
+//@import '~bootstrap-select/sass/bootstrap-select';
+#footer {
+    background-color: $lf-astronautBlue;
+    padding: 75px 50px;
+}
+.dropdown-toggle::after {
+    display: none !important;
+}

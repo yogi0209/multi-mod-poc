@@ -1,0 +1,72 @@
+@mixin button-bg($bg) {
+  background: $bg;
+  border: 2px solid;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  }
+  border-color: $bg;
+}
+
+@mixin input() {
+  font-family: 'Montserrat-Light' !important;
+  font-size: 14px;
+  height: 50px;
+  border:0;
+  outline:0;
+  background: transparent;
+  border-bottom: 2px solid $lf-primary-color;
+}
+@mixin socialBtn{
+  padding-right:45px;
+  padding-left: 30px;
+  text-align:left;
+  height: 45px;
+  background: none;
+  border:none;
+  display: block;
+  background-position: right center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  color:white;
+  font-size:14px;
+  margin-bottom: 15px;
+}
+@mixin orlabel{
+  border: 1px solid rgba(128, 128, 128, 0.28);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  color: rgba(128, 128, 128, 0.48);
+}
+@mixin linkedinBtn{
+  background-color:#0073b2;
+  background:-webkit-linear-gradient(top,#009cda,#0073b2);
+}
+@mixin facebookBtn{
+  border-color:#2d5073;
+  background-color:#3b5998;
+}
+@mixin Btn-oval($bg){
+  height: 50px;
+  border-radius: 24px;
+  color: white;
+  opacity:0.9;
+  border: 0;
+  background-color:$bg;
+}
+
+@mixin input-placeholder-floating {
+  visibility: visible;
+  padding-bottom: 5px;
+  transform: translateY(-100%) scale(0.75);
+}
+@mixin input-placeholder-floating-tel {
+  visibility: visible;
+  padding-bottom: 5px;
+  transform: translateY(-100%) translateX(-10%) scale(0.75);
+}

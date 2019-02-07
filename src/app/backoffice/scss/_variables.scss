@@ -1,0 +1,31 @@
+$app-background-color: white !default;
+$lf-primary-color: #29A1C9;
+$lf-secondary-color: #7BC8E0;
+$lf-black: #000000;
+$lf-white: #FFFFFF;
+$lf-astronautBlue:#1c485a;
+$lf-curiousBlue:#25a5ca;
+$lf-light-grey:rgba(128, 128, 128, 0.28);
+$lf-grey:#808080;
+$lf-error-color:#EA7D7D;
+$lf-teal-blue:#1A4751;
+$lf-baby-white:#FEFEFA;
+$lf-gray:#808080;
+$lf-gray-dark:#373a3c;
+$input-placeholder-color: $lf-primary-color;
+$input-floating-placeholder-color: $lf-primary-color;
+$input-required-placeholder-color: $lf-primary-color;
+
+$input-underline-color: $lf-primary-color;
+$input-underline-color-accent: $lf-primary-color;
+$input-underline-color-warn: $lf-primary-color;
+$input-underline-disabled-color: $lf-primary-color;
+$input-underline-focused-color: $lf-primary-color;
+
+$input-underline-disabled-background-image: linear-gradient(to right,
+        rgba(0,0,0,0.26) 0%, rgba(0,0,0,0.26) 33%, transparent 0%);
+
+
+$swift-ease-out-duration: 0.4s !default;
+$swift-ease-out-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1) !default;
+$lf-form-font:24px;
